@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Maine Integrative Dentistry</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="src/stylesheets/custom.css">
+  </head>
+  <body>
+    <div id="navbar-placeholder"></div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script>
+    fetch('src/components/navbar.html')
+    .then(res => res.text())
+    .then(html => document.getElementById('navbar-placeholder').innerHTML = html);</script>
+    <div class="container-fluid p-0" id="hero">
+      <div class="row" >
+        <div class="col text-center align-self-center" style="color:#25aade;">
+          <h1 class="fw-bold text-wrap">Oral Health for a Lifetime of Health</h1>
+          <p class="fs-4 text-wrap">Our first priority is to build a relationship with you based on trust,
+          open communication, and a personalized approach to help you achieve optimal dental health.</p>
+        </div>
+        <div class="col">
+          <img class='img-fluid float-end' src="assets/images/DRKERR_BG_HERO_CROP.jpg" alt="a woman sitting in a dental chair smiling" />
+        </div>
+      </div>
+    <div class="container-fluid" id="whatIsDentistry">
+        <div class="row" style="min-height: 250px">
+          <div class="col align-self-center">
+            <h4 class="fw-bold text-wrap">What Is Integrative Dentistry?</h4>
+            <p class="fs-6 text-wrap">As average life expectancies have dramatically increased over time, 
+            oral healthcare has become more critical than ever. We know our patients will be with us for many decades, 
+            and we take the long view when it comes to dental care, focusing on treatment and solutions that will go the distance.
+            Our patients appreciate that we are a small practice with a personal touch, 
+            in a state-of-the-art facility overlooking the beautiful Stroudwater Fore River Sanctuary.</p>
+            <button type="button" class="align-self-start btn btn-lg btn-primary btn-learn-more rounded-pill" href="src/views/placeholder.html">Learn More</button>
+          </div>
+        </div>
+    </div>
+    <div class="container-fluid g-0" id="hearFromYou">
+      <div class="row">
+        <div class="col-auto">
+          <img src="/assets/images/Duck.jpg" alt="a rubber duck dressed as a dentist." style="width: 400px; height: 303px;">
+        </div>
+        <div class="col align-self-center">
+          <h4 class="text-wrap">We’d love to hear from you! Get in touch with us to schedule a consultation 
+            or request more information on how Dr. Kerr at Maine Integrative Dentistry can help you.</h4> <br>
+          <h5 class="text-wrap">Contact us by sending an email at <a class="link-info" mailto:patientcare@drkerr.com">patientcare@drkerr.com</a></h5>
+          <h5 class="text-wrap">Or give us a call at <a class="link-info" href="tel:+12077750001">(207) 775-0001</a></h5>
+        </div>
+        <div class="col-1">
+        </div>
+      </div>  
+    </div>
+  </body>
+</html>

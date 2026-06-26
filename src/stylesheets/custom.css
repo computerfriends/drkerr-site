@@ -1,0 +1,95 @@
+.navbar-nav .nav-link.show 
+{
+  color: #0d6e94;
+}
+
+.nav-link
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0;
+  color:#25aade;
+
+}
+
+.nav-link:hover 
+{
+  color: #0d6e94;
+}
+
+.dropdown-item
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.dropdown-item:hover 
+{
+  color: #0d6e94;
+}
+
+#contactInfoTel, #contactInfoEmail, #contactInfoAppt
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+#contactInfoTel:hover, #contactInfoEmail:hover, #contactInfoAppt:hover 
+{
+  color: #dbdbdb;
+}
+
+h1
+{
+  font-family: Arial, Helvetica, sans-serif;
+  color:#25aade
+}
+
+.fs-4
+{
+  font-family: Arial, Helvetica, sans-serif;
+  color:#0d6e94;
+}
+
+#whatIsDentistry {
+  background: linear-gradient(to right, #25aade, #006e6e);
+}
+
+.fs-6, h4
+{
+  color:#ffffff
+}
+
+.btn-learn-more {
+  background-color: #ffbb00;
+  border-color: #ffbb00;
+}
+
+.btn-learn-more:hover 
+{
+  background-color: #ffd050;
+  border-color: #ffd050;
+}
+
+
+#hero img {
+  vertical-align: bottom;
+}
+
+#hearFromYou h4 {
+  color:#25aade;
+}
+
+#hearFromYou h5 {
+  color:#0d6e94;
+}
+
+/* #hero {
+    background-image: url(../../assets/images/DRKERR_BG_HERO.jpg);
+    background-size: auto auto;
+} */
