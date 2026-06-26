@@ -50,7 +50,7 @@ h1
   color:#25aade
 }
 
-.fs-4
+.fs-4, #associations .fs-6
 {
   font-family: Arial, Helvetica, sans-serif;
   color:#0d6e94;
@@ -81,13 +81,14 @@ h1
   vertical-align: bottom;
 }
 
-#hearFromYou h4 {
+#associations h4, #hearFromYou h4 {
   color:#25aade;
 }
 
 #hearFromYou h5 {
   color:#0d6e94;
 }
+
 
 /* #hero {
     background-image: url(../../assets/images/DRKERR_BG_HERO.jpg);
