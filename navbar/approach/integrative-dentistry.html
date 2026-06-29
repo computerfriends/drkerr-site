@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Integrative Dentistry</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../../stylesheets/custom.css">
+  </head>
+  <body>
+    <div id="navbar-placeholder"></div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script>
+        fetch('../../navbar/navbar.html')
+        .then(res => res.text())
+        .then(html => document.getElementById('navbar-placeholder').innerHTML = html);
+    </script>
+    <div class="container-fluid" id="integrativeDentistry">
+        <div class="row">
+          <div class="col-12 col-md-12" style="background-color: black;">
+            <h2 class="text-white my-3">Integrative Dentistry</h2>
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <h4 class="fw-bold text-wrap mt-4 ms-2 mb-4">What Is Integrative Dentistry?</h4>
+                <p class="fs-6 text-wrap mt-4 ms-2 mb-4">At Maine Integrative Dentistry, we see the big picture of how your oral 
+                    health fits in with your overall health. Our goal is to improve your smile, eating comfort 
+                    and health while conserving your natural teeth as much as possible. We use 
+                    the latest technologies and evidence-based research in treating your oral health as an 
+                    integrated system. We also maintain an extensive network of trusted practitioners who can 
+                    provide specialized treatments that may be beyond our scope. Throughout your experience, we 
+                    remain proactive and engaged at every step of the way</p>
+                <h4 class="fw-bold text-wrap mt-4 ms-2 mb-4">Our Philosophy</h4>
+                <p class="fs-6 text-wrap mt-4 ms-2 mb-4">Without thinking about it, we subject our teeth to tremendous stresses
+                     each day: chewing with hundreds of pounds of force; jaw expansion and contraction; and acidity
+                      caused by food and drink, to name a few. As life expectancy extends into the 80s and 90s,
+                      awareness of these stresses today is critically important for the future.</p>
+                <p class="fs-6 text-wrap mt-4 ms-2 mb-4">At Maine Integrative Dentistry, our philosophy is to preserve your natural
+                     teeth with the highest quality oral care, prescribing minimally invasive, yet long lasting
+                      restorations whenever necessary. We focus not only on your teeth, but on your overall health.
+                       We look for evidence of sleep apnea (grinding and acid reflux), gum disease
+                       (inflammation in the mouth that can be connected to heart disease, diabetes and other
+                        inflammatory diseases), and oral cancer at every visit. And for your benefit we use the most
+                        innovative techniques available, from low dose digital x-rays, digital imaging, and milling
+                        of crowns on-site and in a single visit.</p>
+                <p class="fs-6 text-wrap mt-4 ms-2 mb-4">We spend time with you. You are our focus. We look at what is best for you in
+                     the immediate and the long-term, providing clear communication so that you may make better choices
+                      and informed decisions about your oral health.</p>
+                <p class="fs-6 text-wrap mt-4 ms-2 mb-4">If you want to get in contact with us, call us at 207-775-0001 or email us at
+                     patientcare@drkerr.com. Our office is located in Portland, Maine.</p>
+            </div>
+            <div class="col-12 col-md-6 text-center">
+                <figure class="figure w-50">
+                    <img src="../../assets/images/PaintTooth1_sm-768x508.jpg" class="mt-4 me-4 mb-4 figure-img img-fluid rounded" alt="Dr.Kerr works on a dental implant with a paintbrush">
+                    <figcaption class="figure-caption text-center">Making a great smile is a mix of art and science!</figcaption>
+                </figure>
+                <figure class="figure w-50">
+                    <img src="../../assets/images/Hygenists_Brightened_SC-768x768.jpg" class="mt-4 me-4 mb-4 figure-img img-fluid rounded" alt="Dr.Kerr's staff working diligently">
+                    <figcaption class="figure-caption text-center">Teamwork is important for good dentistry!</figcaption>
+                </figure>
+            </div>
+        </div>
+    </div>
+  </body>
+</html>

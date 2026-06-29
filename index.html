@@ -6,15 +6,16 @@
     <title>Maine Integrative Dentistry</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="src/stylesheets/custom.css">
+    <link rel="stylesheet" href="stylesheets/custom.css">
   </head>
   <body>
     <div id="navbar-placeholder"></div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <script>
-    fetch('src/components/navbar.html')
-    .then(res => res.text())
-    .then(html => document.getElementById('navbar-placeholder').innerHTML = html);</script>
+        fetch('navbar/navbar.html')
+        .then(res => res.text())
+        .then(html => document.getElementById('navbar-placeholder').innerHTML = html);
+    </script>
     <div class="container-fluid p-0" id="hero">
       <div class="row" >
         <div class="col-12 col-md-6 text-center align-self-center" style="color:#25aade;">
@@ -43,13 +44,13 @@
     <div class="container-fluid g-0" id="hearFromYou">
       <div class="row">
         <div class="col-12 col-lg-4">
-          <img class="img-fluid w-100" src="./assets/images/Duck_Big.jpg" alt="a rubber duck dressed as a dentist.">
+          <img class="img-fluid w-100" src="assets/images/Duck_Big.jpg" alt="a rubber duck dressed as a dentist.">
         </div>
         <div class="col-12 col-md-8 align-self-center">
           <div class="d-flex flex-column text-center text-md-start my-4">
             <h4 class="text-wrap fw-bold mb-4">We’d love to hear from you! Get in touch with us to schedule a consultation 
               or request more information on how Dr. Kerr at Maine Integrative Dentistry can help you.</h4>
-            <h5 class="text-wrap">Contact us by sending an email at <a class="link-info" mailto:patientcare@drkerr.com">patientcare@drkerr.com</a></h5>
+            <h5 class="text-wrap">Contact us by sending an email at <a class="link-info" href="mailto:patientcare@drkerr.com">patientcare@drkerr.com</a></h5>
             <h5 class="text-wrap">Or give us a call at <a class="link-info" href="tel:+12077750001">(207) 775-0001</a></h5>
         </div>
         </div>
@@ -58,39 +59,39 @@
     <div class="container-fluid" id="servicesGrid">
       <div class="row">
         <div class="col-12 col-md-4 text-center d-flex flex-column align-items-center justify-content-center" style="min-height: 50vh; background: #25AADE;">
-          <img class="mb-2" src="assets/images/general_dentistry_icon.png">
+          <img class="mb-2" src="assets/images/services_grid/general_dentistry_icon.png">
           <h4 class="mb-4">
             General Dentistry
           </h4>
           <p class="fs-6">Our first priority is to build a relationship with you, 
             based on trust and open communication and a personalized approach, 
             in helping you achieve optimal dental health.</p>
-          <a class="text-white" href="placeholder.html">LEARN MORE</a></h5>
+          <a class="text-white" href="navbar/services/general-dentistry.html">LEARN MORE</a>
         </div>
         <div class="col-12 col-md-4 text-center d-flex flex-column align-items-center justify-content-center" style="min-height: 50vh; background: #0D6E94;">
-          <img class="mb-2" src="assets/images/implant_icon.png">
+          <img class="mb-2" src="assets/images/services_grid/implant_icon.png">
           <h4 class="mb-4">
             Implant
           </h4>
           <p class="fs-6">In the past, if you lost a tooth, your choices were limited. 
             Modern implant dentistry offers significantly better and more flexible options and at 
             Maine Integrative Dentistry, we’ve helped develop the science and artistry behind placing implants.</p>
-          <a class="text-white" href="placeholder.html">LEARN MORE</a></h5>
+          <a class="text-white" href="placeholder.html">LEARN MORE</a>
         </div>
         <div class="col-12 col-md-4 text-center d-flex flex-column align-items-center justify-content-center" style="min-height: 50vh; background: #25AADE;">
-          <img class="mb-2" src="assets/images/restorative_icon.png">
+          <img class="mb-2" src="assets/images/services_grid/restorative_icon.png">
           <h4 class="mb-4">
             Restorative
           </h4>
           <p class="fs-6">When a tooth has been damaged due to dental decay or breakage than it will need to be filled, 
             or restructured with a crown or onlay. The goal of restorative dentistry is to preserve as much of 
             your natural tooth as possible, while treating the cause of the damage and restoring the tooth’s health.</p>
-          <a class="text-white" href="placeholder.html">LEARN MORE</a></h5>
+          <a class="text-white" href="placeholder.html">LEARN MORE</a>
         </div>
       </div>
       <div class="row">
         <div class="col-12 col-md-4 text-center d-flex flex-column align-items-center justify-content-center" style="min-height: 50vh; background: #0D6E94;">
-          <img class="mb-2" src="assets/images/cosmetic_icon.png">
+          <img class="mb-2" src="assets/images/services_grid/cosmetic_icon.png">
           <h4 class="mb-4">
             Cosmetic
           </h4>
@@ -98,27 +99,27 @@
             we strive to provide harmony and beauty with results that \look as natural as possible. 
             We use a very detailed set tools that enable us to tailor treatments and procedures to the 
             needs of each individual patient.</p>
-          <a class="text-white" href="placeholder.html">LEARN MORE</a></h5>
+          <a class="text-white" href="placeholder.html">LEARN MORE</a>
         </div>
         <div class="col-12 col-md-4 text-center d-flex flex-column align-items-center justify-content-center" style="min-height: 50vh; background: #25AADE;">
-          <img class="mb-2" src="assets/images/sleep_apnea_icon.png">
+          <img class="mb-2" src="assets/images/services_grid/sleep_apnea_icon.png">
           <h4 class="mb-4">
             Sleep Apnea
           </h4>
           <p class="fs-6">Treating snoring or sleep apnea with oral appliance therapy can help you feel like a new person. 
             Oral appliance therapy is an effective, non-invasive treatment option for snoring and obstructive sleep apnea 
             that fits easily into your lifestyle.</p>
-          <a class="text-white" href="placeholder.html">LEARN MORE</a></h5>
+          <a class="text-white" href="placeholder.html">LEARN MORE</a>
         </div>
         <div class="col-12 col-md-4 text-center d-flex flex-column align-items-center justify-content-center" style="min-height: 50vh; background: #0D6E94;">
-          <img class="mb-2" src="assets/images/hygiene_toothbrush_icon.png">
+          <img class="mb-2" src="assets/images/services_grid/hygiene_toothbrush_icon.png">
           <h4 class="mb-4">
             Hygiene
           </h4>
           <p class="fs-6">Everyone wants have a great smile with clean white teeth and healthy gums. 
             This is why people like their hygiene appointment. But, did you know it is more important than that? 
             It is a comprehensive evaluation of your oral health.</p>
-          <a class="text-white" href="placeholder.html">LEARN MORE</a></h5>
+          <a class="text-white" href="navbar/services/dental-hygiene.html">LEARN MORE</a>
         </div>
       </div>
     </div>
@@ -135,24 +136,23 @@
           <div id="carouselDentalAssociations" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                  <img src="assets/images/carousel/Maine-Dental-Association-1.jpg" class="d-block w-100" alt="logo for Maine Dental Association">
+                  <img src="assets/images/dental_logo_carousel/Maine-Dental-Association-1.jpg" class="d-block w-100" alt="logo for Maine Dental Association">
                 </div>
                 <div class="carousel-item">
-                  <img src="assets/images/carousel/Academy-of-General-Dentistry.jpg" class="d-block w-100" alt="logo for Academy of General Dentistry">
+                  <img src="assets/images/dental_logo_carousel/Academy-of-General-Dentistry.jpg" class="d-block w-100" alt="logo for Academy of General Dentistry">
                 </div>
                 <div class="carousel-item">
-                  <img src="assets/images/carousel/American-Academy-for-Oral-Systematic-Health.jpg" class="d-block w-100" alt="logo for American Academy for Oral Systematic Health">
+                  <img src="assets/images/dental_logo_carousel/American-Academy-for-Oral-Systematic-Health.jpg" class="d-block w-100" alt="logo for American Academy for Oral Systematic Health">
                 </div>
                 <div class="carousel-item">
-                  <img src="assets/images/carousel/American-Academy-of-Dental-Sleep-Medicine.jpg" class="d-block w-100" alt="logo for American Academy of Dental Sleep Medicine">
+                  <img src="assets/images/dental_logo_carousel/American-Academy-of-Dental-Sleep-Medicine.jpg" class="d-block w-100" alt="logo for American Academy of Dental Sleep Medicine">
                 </div>
                 <div class="carousel-item">
-                  <img src="assets/images/carousel/American-Academy-of-Implant-Dentistry.jpg" class="d-block w-100" alt="logo for American Academy of Implant Dentistry">
+                  <img src="assets/images/dental_logo_carousel/American-Academy-of-Implant-Dentistry.jpg" class="d-block w-100" alt="logo for American Academy of Implant Dentistry">
                 </div>
                 <div class="carousel-item">
-                  <img src="assets/images/carousel/Spear-Education-Faculty-Club.jpg" class="d-block w-100" alt="logo for Spear Education Faculty Club">
+                  <img src="assets/images/dental_logo_carousel/Spear-Education-Faculty-Club.jpg" class="d-block w-100" alt="logo for Spear Education Faculty Club">
                 </div>
-              </div>  
             </div>
           </div>
         </div>
