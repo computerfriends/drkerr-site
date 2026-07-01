@@ -8,6 +8,12 @@ body
   font-family: var(--bs-body-font-family);
 }
 
+#integrativeDentistry .row a.w-25 img {
+    width: 100%;
+    height: 200px;      
+    object-fit: cover;    
+}
+
 .navbar-nav .nav-link.show
 {
   color: #0d6e94;
@@ -23,9 +29,14 @@ body
 
 }
 
-.nav-link:hover 
+.nav-link:hover
 {
   color: #0d6e94;
+}
+
+.dropdown-item:active 
+{
+  background-color: #a8e6ff;
 }
 
 .dropdown-item

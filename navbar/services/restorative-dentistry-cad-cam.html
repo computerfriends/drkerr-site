@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Restorative Dentistry</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../../stylesheets/custom.css">
+  </head>
+  <body>
+    <div id="navbar-placeholder"></div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script>
+        fetch('/navbar/navbar.html')
+        .then(res => res.text())
+        .then(html => document.getElementById('navbar-placeholder').innerHTML = html);
+    </script>
+    <div class="container-fluid" id="integrativeDentistry">
+        <div class="row">
+          <div class="col-12 col-md-12" style="background-color: black;">
+            <h2 class="text-white my-3">Restorative Dentistry</h2>
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-12">
+                <h4 class="fw-bold text-wrap mt-4 ms-2 mb-4"> <img class="me-4" src="../../assets/images/services_grid/restorative_icon.png">Restorative Dentistry – One Visit Dentistry</h4>
+                <p class="fs-6 text-wrap mt-4 ms-2 mb-4"> Our goal with restorative dentistry 
+                  is to make your teeth as cosmetically beautiful and aesthetically natural as possible.  
+                  Because of decay and breakage, a person’s smile may not be look as good as it once was.
+                  We can bring it back.  
+                </p>
+                <p class="fs-6 text-wrap mt-4 ms-2 mb-4">When a tooth has been damaged due to dental decay
+                  or breakage, it must be either filled, or restored with an onlay or crown.
+                  Our goal is to preserve as much of your natural tooth as possible.   We prefer to use
+                  materials that allow us to most closely match the tooth color. Matching tooth color
+                  is very important, so we have an exceptionally large array of color tones to get the
+                  perfect smile.  In a highly demanding situation such as the front teeth the tooth can
+                  be layered to give the most realistic invisible presentation.  Depending on the
+                  situation, we may be able to conserve the tooth by creating an onlay, a procedure
+                  only 12% of the dentists in the nation perform. For both onlays and crowns, 
+                  we use CAD/CAM dentistry, digital imaging from which we mill the onlays and 
+                  crowns right here in the office. The fact that we have this equipment in our 
+                  office significantly reduces the number of visits you have to make in order to 
+                  get the job done and looking good.
+                </p>
+                <figure class="figure w-25">
+                <img src="../../assets/images/cadcam.png" class="mt-4 me-4 mb-4 figure-img img-fluid rounded" alt="two photos of teeth that compare the results between dental fillings and restorative dentistry">
+                </figure>
+                <h4 class="fw-bold text-wrap mt-4 ms-2 mb-4">Why do I do CAD/CAM dentistry?</h4>
+                <p class="fs-6 text-wrap mt-4 ms-2 mb-4">CAD/CAM dentistry provides a three dimensional
+                  digital image of your mouth, which allows us to sculpt and shape a crown or onlay with
+                  state-of-the-art software, and then mill it on-site with our CEREC milling machine.
+                  A procedure that took up to 6 weeks to complete in the past can now be performed in
+                  one visit while you wait.</p>
+                <p class="fs-6 text-wrap mt-4 ms-2 mb-4">Not only is it faster, but the end result is
+                  a more comfortable fitting restoration with custom color matching that looks completely
+                  natural. At Maine Integrative Dentistry, we have been making restorations this way since
+                  2002 when we invested in the technology and became one of the first dental practices in
+                  Maine to be able to offer this level of service. </p>
+                <p class="fs-6 text-wrap mt-4 ms-2 mb-4">If you’d like to schedule an appointment, 
+                  give us a call at 207-775-0001 or email us at patientcare@drkerr.com.
+                  We are located in Portland, Maine.</p>
+                <h4 class="fw-bold text-wrap mt-4 ms-2 mb-4">Filling Versus Crown CAD/CAM</h4>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/OrN5v_AIkls?si=ihfsb6hYnLwxLHNG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+          </div>  
+    </div>
+  </body>
+</html>
