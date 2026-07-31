@@ -1,17 +1,46 @@
 :root
 {
-  --bs-body-font-family: Arial, Helvetica, sans-serif;
+  --bs-body-font-family: 'Source Sans 3', Arial, sans-serif;
+}
+
+
+.svc
+{
+  transition:transform .18s ease,;
+  box-shadow: .18s ease;
+  display:flex;
+  flex-direction:column;
+  text-decoration:none;
+  color:#0d2b45;
+  height: 100%;
+  border-top: 0px;
+  border-bottom:0px;
+  border-right:0px;
+  border-left:0px;
+}
+
+.svc:hover
+{
+  transform:translateY(-5px);
+}
+
+a.svc:hover .card
+{
+  box-shadow:0 14px 30px rgba(13,43,69,.12);
 }
 
 body
 {
   font-family: var(--bs-body-font-family);
+  line-height:1.65;
+  background:var(--white);
+  font-size:17px;
 }
 
-#integrativeDentistry .row a.w-25 img {
-    width: 100%;
-    height: 200px;      
-    object-fit: cover;    
+
+#jumbotron 
+{
+  background: linear-gradient(160deg, #0d2b45 0%, #123a5c 55%, #0d6e94 130%);
 }
 
 .navbar-nav .nav-link.show
@@ -19,37 +48,49 @@ body
   color: #0d6e94;
 }
 
+.brand
+{
+  text-decoration:none;line-height:1.15;
+}
+
+.brand .b1
+{
+  font-family:'Playfair Display',serif;font-weight:700;font-size:1.28rem;color:#0d2b45;display:block;
+}
+
+.brand .b2
+{
+  font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:#2e7ab5;font-weight:700;
+}
+
+#navbarTop 
+{
+  background-color: #0d2b45;
+  /* padding-top: 0.50rem;
+  padding-bottom: 0.50rem; */
+}
+
+.navbar-nav, #navbarTop 
+{
+  color: #ffffff;
+}
+
+
 .nav-link
 {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
-  font-weight: 400;
+  font-family: 'Source Sans 3', Arial, sans-serif;
+  font-size: .97rem;
+  font-weight: 600;
   letter-spacing: 0;
-  color:#25aade;
+  color:#22303c;
 
 }
 
 .nav-link:hover
 {
-  color: #0d6e94;
+  color: #2e7ab5;
 }
 
-.dropdown-item:active 
-{
-  background-color: #a8e6ff;
-}
-
-.dropdown-item
-{
-  font-size: 16px;
-  font-weight: 400;
-  letter-spacing: 0;
-}
-
-.dropdown-item:hover 
-{
-  color: #0d6e94;
-}
 
 #contactInfoTel, #contactInfoEmail, #contactInfoAppt
 {
@@ -65,58 +106,282 @@ body
 
 h1
 {
-  color:#25aade
+  font-size: 3.2rem;
+  font-family:'Playfair Display',Georgia,serif;
+  color:#ffffff;
 }
 
-.fs-4, #associations .fs-6
+h2
 {
-  color:#0d6e94;
+  font-size: 2.4rem;
+  font-weight: bold;
+  font-family:'Playfair Display',Georgia,serif;
+  color:#0d2b45;
 }
 
-#whatIsDentistry {
-  background: linear-gradient(to right, #25aade, #006e6e);
-}
-
-.fs-6
+.lede
 {
-  color: #0d6e94;
+  max-width:760px;font-size:1.08rem;
 }
 
-h4
+.backtop
 {
-  color: #25aade;
+  font-size:.88rem;
+  font-weight:700;
 }
 
-#whatIsDentistry .fs-6, #servicesGrid .fs-6, #servicesGrid h4, #whatIsDentistry h4
+
+h3
 {
-  color:#ffffff
+  font-size: 1.3rem;
+  font-weight: bold;
+  font-family:'Playfair Display',Georgia,serif;
+  color:#0d2b45;
 }
 
-.btn-learn-more {
-  background-color: #ffbb00;
-  border-color: #ffbb00;
-}
-
-.btn-learn-more:hover 
+.modal-title
 {
-  background-color: #ffd050;
-  border-color: #ffd050;
+  font-size: 1.3rem;
+  font-weight: bold;
+  font-family:'Playfair Display',Georgia,serif;
+  color:#0d2b45;
 }
 
 
-#hero img {
-  vertical-align: bottom;
+.card.infocard 
+{
+  border-top: 0px;
+  border-bottom:0px;
+  border-right:0px;
+  border-left:5px solid #c8873a;
 }
 
-#associations h4, #hearFromYou h4 {
-  color:#25aade;
+.anxietycard 
+{
+  border-top: 0px;
+  border-bottom:0px;
+  border-right:0px;
+  border-top:5px solid #2e7ab5;
 }
 
-#hearFromYou h5 {
-  color:#0d6e94;
+#contact .info .lbl
+{
+  min-width:86px;
+  font-weight:700;
+  color:#c8873a;
+  text-transform:uppercase;
+  font-size:.8rem;
+  letter-spacing:.1em;
+}
+
+#contact .info li
+{
+  list-style:none;
+  padding:12px 0;
+  border-bottom:1px solid rgba(255,255,255,.14);
+  display:flex;
+  gap:14px;
+  align-items:center;
+  color:#ffffff;
+}
+
+/* display:flex makes ::before a flex item, so Bootstrap Icons'
+   vertical-align:-.125em no longer applies and the glyph centers cleanly */
+#contact .info li .bi
+{
+  font-size:20px;
+  line-height:1;
+  display:flex;
+  align-items:center;
+}
+
+#contact .info
+{
+  padding-left: 0;
+}
+
+.card-title 
+{
+  font-size: 1.1rem;
+  font-weight: bold;
+  font-family:'Playfair Display',Georgia,serif;
+  color:#0d2b45;
 }
 
 
+.tagline 
+{
+font-family:'Source Sans 3', Arial, sans-serif;
+color:#ffffff;
+ }
+
+.tagline 
+{
+  font-size:1.18rem;
+}
+
+.kicker
+{
+  display:inline-block;
+  font-size:.82rem;
+  font-weight:700;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  color:#c8873a;
+  margin-bottom:14px;
+}
+
+.heroButton 
+{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-family: 'Source Sans 3', Arial, sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+#heroContactButton:hover
+{
+  background-color:#e09b46;
+}
+
+#heroContactButton 
+{
+  border: 0px;
+  background-color: #c8873a;
+  color: #ffffff;
+}
+
+#approach 
+{
+  background-color:#f7f4ee;
+}
+
+#services 
+{
+  background-color:#f7f4ee;
+}
+
+#implant-dentistry 
+{
+   background-color:#f7f4ee;
+}
+
+#dental-hygiene 
+{
+  background-color:#f7f4ee;
+}
+
+#contact {
+  background: linear-gradient(160deg, #0d2b45 0%, #123a5c 55%, #0d6e94 130%);
+}
+
+#assoc 
+{
+  background-color:#f7f4ee;
+}
+
+#assoc h2
+{
+  font-size: 1.5rem;
+}
+
+#assoc h3
+{
+  font-size: 1.1rem;
+}
+
+.nav-pills 
+{
+  --bs-nav-pills-link-active-bg: #ffffff;
+  --bs-nav-pills-link-active-color: #0d2b45;
+}
+
+.nav-pills .nav-link 
+{
+  border: 1px solid #e8eef4;
+}
+
+.nav-pills .nav-link 
+{
+  box-shadow:0 3px 10px rgba(13,43,69,.06);
+}
+
+#about
+{
+  background:#0d2b45;
+  color:#d9e6f2;
+}
+
+#about .kicker
+{
+  color:#c8873a;
+}
+
+#about h2
+{
+  color: #fff;
+}
+
+#cosmetic-invisalign
+{
+  background-color:#f7f4ee
+}
+
+#contact h2 {
+  color:#fff
+}
+
+#contact p {
+  color:#fff
+}
+
+#about .creds
+{
+  list-style:none;
+  margin-top:10px;
+}
+
+#about .creds li
+{
+  padding:9px 0 9px 30px;
+  position:relative;
+  border-bottom:1px solid rgba(255,255,255,.12);
+}
+
+#about .creds li::before
+{
+  content:"";
+  position:absolute;
+  left:0;
+  top:15px;
+  width:14px;
+  height:14px;
+  border-radius:50%;
+  background:#c8873a;
+}
+
+.material-symbols-outlined
+{
+  font-size: 40px;
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 40
+}
+
+#footer
+{
+  background-color: #091d30;
+
+}
+
+.footer-text 
+{
+  color:#8fa9c0;
+  font-size:.9rem
+}
 
 /* #hero {
     background-image: url(../../assets/images/DRKERR_BG_HERO.jpg);

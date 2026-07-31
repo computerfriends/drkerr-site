@@ -4,159 +4,428 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Maine Integrative Dentistry</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=dentistry,hotel,medical_mask,oral_disease,star_shine,wand_stars" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="stylesheets/custom.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="/stylesheets/custom.css">
   </head>
   <body>
     <div id="navbar-placeholder"></div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/usal@2.0.0/usal.min.js"></script>
     <script>
         fetch('/navbar/navbar.html')
         .then(res => res.text())
         .then(html => document.getElementById('navbar-placeholder').innerHTML = html);
     </script>
-    <div class="container-fluid p-0" id="hero">
-      <div class="row" >
-        <div class="col-12 col-md-6 text-center align-self-center" style="color:#25aade;">
-          <h1 class="fw-bold text-wrap">Oral Health for a Lifetime of Health</h1>
-          <p class="fs-4 text-wrap">Our first priority is to build a relationship with you based on trust,
-          open communication, and a personalized approach to help you achieve optimal dental health.</p>
-        </div>
-        <div class="col-12 col-md-6">
-          <img class='img-fluid' src="assets/images/DRKERR_BG_HERO_CROP.jpg" alt="a woman sitting in a dental chair smiling" />
-        </div>
-      </div>
-    </div>
-    <div class="container-fluid" id="whatIsDentistry">
-        <div class="row" style="min-height: 300px">
-          <div class="col align-self-center text-center text-md-start my-4">
-            <h4 class="fw-bold text-wrap">What Is Integrative Dentistry?</h4>
-            <p class="fs-6 text-wrap">As average life expectancies have dramatically increased over time, 
-            oral healthcare has become more critical than ever. We know our patients will be with us for many decades, 
-            and we take the long view when it comes to dental care, focusing on treatment and solutions that will go the distance.
-            Our patients appreciate that we are a small practice with a personal touch, 
-            in a state-of-the-art facility overlooking the beautiful Stroudwater Fore River Sanctuary.</p>
-            <button type="button" class="align-self-start btn btn-lg btn-primary btn-learn-more rounded-pill" href="navbar/approach/integrative-dentistry.html">Learn More</button>
+
+      <div id="jumbotron" class="p-5 mb-0 bg-body-tertiary rounded-0 text-wrap">
+        <div data-usal="fade split-item split-delay-50-linear" class="container-fluid py-5" id="top">
+          <div class="row" >
+            <div class="col-12 col-md-6 mb-4">
+              <h1 class="mb-4">Oral health for a lifetime of health.</h1>
+              <p class="tagline">We're a small Portland, Maine dental practice with a personal touch — taking the long view of your dental care in a state-of-the-art facility overlooking the Stroudwater Fore River Sanctuary.</p>
+            </div>
           </div>
-        </div>
-    </div>
-    <div class="container-fluid g-0" id="hearFromYou">
-      <div class="row">
-        <div class="col-12 col-lg-4">
-          <img class="img-fluid w-100" src="assets/images/Duck_Big.jpg" alt="a rubber duck dressed as a dentist.">
-        </div>
-        <div class="col-12 col-md-8 align-self-center">
-          <div class="d-flex flex-column text-center text-md-start my-4">
-            <h4 class="text-wrap fw-bold mb-4">We’d love to hear from you! Get in touch with us to schedule a consultation 
-              or request more information on how Dr. Kerr at Maine Integrative Dentistry can help you.</h4>
-            <h5 class="text-wrap">Contact us by sending an email at <a class="link-info" href="mailto:patientcare@drkerr.com">patientcare@drkerr.com</a></h5>
-            <h5 class="text-wrap">Or give us a call at <a class="link-info" href="tel:+12077750001">(207) 775-0001</a></h5>
-        </div>
-        </div>
-      </div>  
-    </div>
-    <div class="container-fluid" id="servicesGrid">
-      <div class="row">
-        <div class="col-12 col-md-4 text-center d-flex flex-column align-items-center justify-content-center" style="min-height: 50vh; background: #25AADE;">
-          <img class="mb-2" src="assets/images/services_grid/general_dentistry_icon.png">
-          <h4 class="mb-4">
-            General Dentistry
-          </h4>
-          <p class="fs-6">Our first priority is to build a relationship with you, 
-            based on trust and open communication and a personalized approach, 
-            in helping you achieve optimal dental health.</p>
-          <a class="text-white" href="navbar/services/general-dentistry.html">LEARN MORE</a>
-        </div>
-        <div class="col-12 col-md-4 text-center d-flex flex-column align-items-center justify-content-center" style="min-height: 50vh; background: #0D6E94;">
-          <img class="mb-2" src="assets/images/services_grid/implant_icon.png">
-          <h4 class="mb-4">
-            Implant
-          </h4>
-          <p class="fs-6">In the past, if you lost a tooth, your choices were limited. 
-            Modern implant dentistry offers significantly better and more flexible options and at 
-            Maine Integrative Dentistry, we’ve helped develop the science and artistry behind placing implants.</p>
-          <a class="text-white" href="navbar/services/implant-dentistry.html">LEARN MORE</a>
-        </div>
-        <div class="col-12 col-md-4 text-center d-flex flex-column align-items-center justify-content-center" style="min-height: 50vh; background: #25AADE;">
-          <img class="mb-2" src="assets/images/services_grid/restorative_icon.png">
-          <h4 class="mb-4">
-            Restorative
-          </h4>
-          <p class="fs-6">When a tooth has been damaged due to dental decay or breakage than it will need to be filled, 
-            or restructured with a crown or onlay. The goal of restorative dentistry is to preserve as much of 
-            your natural tooth as possible, while treating the cause of the damage and restoring the tooth’s health.</p>
-          <a class="text-white" href="navbar/services/restorative-dentistry-cad-cam.html">LEARN MORE</a>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-12 col-md-4 text-center d-flex flex-column align-items-center justify-content-center" style="min-height: 50vh; background: #0D6E94;">
-          <img class="mb-2" src="assets/images/services_grid/cosmetic_icon.png">
-          <h4 class="mb-4">
-            Cosmetic
-          </h4>
-          <p class="fs-6">Everything we do, whether it is the smallest filling to completely changing your smile, 
-            we strive to provide harmony and beauty with results that \look as natural as possible. 
-            We use a very detailed set tools that enable us to tailor treatments and procedures to the 
-            needs of each individual patient.</p>
-          <a class="text-white" href="navbar/services/cosmetic-invisalign.html">LEARN MORE</a>
-        </div>
-        <div class="col-12 col-md-4 text-center d-flex flex-column align-items-center justify-content-center" style="min-height: 50vh; background: #25AADE;">
-          <img class="mb-2" src="assets/images/services_grid/sleep_apnea_icon.png">
-          <h4 class="mb-4">
-            Sleep Apnea
-          </h4>
-          <p class="fs-6">Treating snoring or sleep apnea with oral appliance therapy can help you feel like a new person. 
-            Oral appliance therapy is an effective, non-invasive treatment option for snoring and obstructive sleep apnea 
-            that fits easily into your lifestyle.</p>
-          <a class="text-white" href="navbar/services/tmj-sleep-apnea.html">LEARN MORE</a>
-        </div>
-        <div class="col-12 col-md-4 text-center d-flex flex-column align-items-center justify-content-center" style="min-height: 50vh; background: #0D6E94;">
-          <img class="mb-2" src="assets/images/services_grid/hygiene_toothbrush_icon.png">
-          <h4 class="mb-4">
-            Hygiene
-          </h4>
-          <p class="fs-6">Everyone wants have a great smile with clean white teeth and healthy gums. 
-            This is why people like their hygiene appointment. But, did you know it is more important than that? 
-            It is a comprehensive evaluation of your oral health.</p>
-          <a class="text-white" href="navbar/services/dental-hygiene.html">LEARN MORE</a>
-        </div>
-      </div>
-    </div>
-    <div class="container-fluid" id="associations">
-      <div class="row">
-        <div class="col-12 col-md-12 text-center my-4">
-          <h4 class="fw-bold text-wrap">Associations</h4>
-          <p class="fs-6 text-wrap">Dr. Kerr stays connected with doctors throughout the profession and the 
-            nation by being part of these organizations and academies.</p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-12 col-md-2 mx-auto" style="min-height:300px">
-          <div id="carouselDentalAssociations" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                  <img src="assets/images/dental_logo_carousel/Maine-Dental-Association-1.jpg" class="d-block w-100" alt="logo for Maine Dental Association">
-                </div>
-                <div class="carousel-item">
-                  <img src="assets/images/dental_logo_carousel/Academy-of-General-Dentistry.jpg" class="d-block w-100" alt="logo for Academy of General Dentistry">
-                </div>
-                <div class="carousel-item">
-                  <img src="assets/images/dental_logo_carousel/American-Academy-for-Oral-Systematic-Health.jpg" class="d-block w-100" alt="logo for American Academy for Oral Systematic Health">
-                </div>
-                <div class="carousel-item">
-                  <img src="assets/images/dental_logo_carousel/American-Academy-of-Dental-Sleep-Medicine.jpg" class="d-block w-100" alt="logo for American Academy of Dental Sleep Medicine">
-                </div>
-                <div class="carousel-item">
-                  <img src="assets/images/dental_logo_carousel/American-Academy-of-Implant-Dentistry.jpg" class="d-block w-100" alt="logo for American Academy of Implant Dentistry">
-                </div>
-                <div class="carousel-item">
-                  <img src="assets/images/dental_logo_carousel/Spear-Education-Faculty-Club.jpg" class="d-block w-100" alt="logo for Spear Education Faculty Club">
-                </div>
+          <div class="row">
+            <div class="col-12 col-md-6">
+              <a id="heroContactButton" class="heroButton me-2 btn btn-primary btn-lg rounded-3" href="#contact" role="button">Schedule a Consultation</a>
+              <a id="heroServicesButton" class="heroButton mt-3 btn btn-outline-light btn-lg rounded-3" href="#services" role="button">Explore our Services</a>
             </div>
           </div>
         </div>
       </div>
-    </div>
+      <div class="container-fluid ps-5 pt-5 pe-5" id="approach">
+        <div class="row" >
+          <div data-usal="fade split-item split-delay-50-linear" class="col-12 col-md-6 mb-4">
+            <span class="kicker mb-3">Our Approach</span>
+            <h2 class="mb-2">What is integrative dentistry?</h2>
+            <p class="lede mb-5">At Maine Integrative Dentistry, we see the big picture of how your oral health fits in with your overall health. We want to help you have a great smile, eat comfortably, and be healthy — keeping your natural teeth for your whole life. We use up-to-date technologies and research-based methods, and when your care calls for expertise beyond our scope, we maintain a trusted referral network of specialists.</p>
+            <h3 class="mb-2">Our philosophy</h3>
+            <p>Your teeth work hard every day — chewing forces, jaw movement, and the acidity of what we eat and drink all place stress on them. With so many of us now living into our 80s and 90s, we know our patients will be with us for many decades, and we take the long view when it comes to dental care, focusing on treatment and solutions that will go the distance.</p>
+            <p class="mb-5">That means preserving natural teeth through quality care and minimally invasive, durable restorations. It means screening for sleep apnea, for gum disease — which research has linked to heart disease and diabetes — and for oral cancer at your regular visits. And it means taking the time to listen, because your care should reflect both your immediate needs and your long-term health.</p>
+            <h3>Comprehensive care</h3>
+            <p>Comprehensive care means we think about your overall health — not <em>just</em> your oral health. Whether your goal is a better smile, more comfortable chewing, or less snoring, we offer a wide range of modern treatments and can often be a one-stop shop for your dental needs. When a referral is the right answer, Dr. Kerr works with a trusted network of specialist colleagues. We work with your insurance, offer financing options, and build treatment plans — in phases when that helps — that are financially feasible for you.</p>
+          </div>
+          <div data-usal="fade split-item split-delay-50-linear" class="col-12 col-md-6 mt-5 mb-4">
+            <div class="card infocard mb-4 pt-2 pb-2" style="width: 100%;">
+              <div class="card-body">
+                <h3 class="card-title">A relationship first</h3>
+                <p class="card-text">Our first priority is building a relationship with you based on trust, open communication, and a personalized approach to your optimal dental health.</p>
+              </div>
+            </div>
+            <div class="card infocard mb-4 pt-2 pb-2" style="width: 100%;">
+              <div class="card-body">
+                <h3 class="card-title">The long view</h3>
+                <p class="card-text">We plan your care for the decades ahead — conservative where possible, comprehensive where it counts — so you need less dentistry, not more, over your lifetime.</p>
+              </div>
+            </div>
+            <div class="card infocard mb-4 pt-2 pb-2" style="width: 100%;">
+              <div class="card-body">
+                <h3 class="card-title">Whole-body thinking</h3>
+                <p class="card-text">Oral health and overall health run in both directions — healthy gums support a healthy heart, and good oral hygiene can even help diabetic patients manage blood sugar.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid ps-5 pt-5 pe-5" id="technology">
+        <div class="row" >
+          <div data-usal="fade split-item split-delay-50-linear" class="col-12 col-md-6 mb-4">
+            <span class="kicker mb-3">State of the Art</span>
+            <h2 class="mb-2">Technology that improves your quality of care</h2>
+            <div class="cols">
+              <p>Our facility has state-of-the-art technology <em>and</em> we stay on the forefront of the latest clinical techniques. We use low-dose digital x-rays, can create digital 3D images of your jaw (cone-beam imaging), and can make your crown while you're in the office.</p>
+              <p>We use digital photography to see how your teeth relate to your facial features, so results are aesthetically pleasing as well as functional. Our 3D imaging system lets us carefully plan and design your smile: first we take a 3D x-ray of your mouth and jaw, then we use the computer to superimpose our dentistry into your mouth — before we actually do any procedures.</p>
+              <p>We also mill crowns in-house. That technology decreases the number of visits it takes to finish your procedure — crowns can often be designed, fabricated, and placed the same day.</p>
+            </div>
+          </div>
+          <div data-usal="fade" class="col-12 col-md-6 mb-4">
+            <div class="ratio ratio-16x9 mt-5">
+              <iframe loading="lazy" src="https://www.youtube.com/embed/AT4fjUXvnjE" title="3D imaging system demonstration" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>  
+      <div class="container-fluid ps-5 pt-5 pe-5 pb-5" id="services">
+        <div class="row" >
+          <div data-usal="fade split-item split-delay-50-linear" class="col-12 col-md-12 mb-4">
+          <span class="kicker mb-3">What We Do</span>
+          <h2 class="mb-2">Complete care, under one roof</h2>
+          <p class="lede">From routine hygiene to advanced implant and sleep apnea care, we tailor every treatment to the person in the chair. Select a service to read more.</p>
+          </div>
+        </div>
+        <div data-usal="fade split-item split-delay-50-linear" class="row gy-4" >
+          <div class="col-12 col-md-4">
+            <a class="svc" href="#general-dentistry">
+              <div class="card svc">
+                <div class="card-body">
+                  <span class="material-symbols-outlined">oral_disease</span>
+                  <h3 class="card-title">General Dentistry</h3>
+                  <p class="card-text">The foundation of our practice — prevention, maintenance, and treatment, guided by 30+ years of experience.</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-12 col-md-4">
+            <a class="svc" href="#implant-dentistry">
+              <div class="card svc">
+                <div class="card-body">
+                  <span class="material-symbols-outlined">dentistry</span>
+                  <h3 class="card-title">Implant Dentistry</h3>
+                  <p class="card-text">Natural-looking, fully functional replacement teeth — planned virtually in 3D, often placed without sutures.</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-12 col-md-4">
+            <a class="svc" href="#restorative-dentistry">
+              <div class="card svc">
+                <div class="card-body">
+                  <span class="material-symbols-outlined">wand_stars</span>
+                  <h3 class="card-title">Restorative &amp; CAD/CAM</h3>
+                  <p class="card-text">One-visit crowns and conservative onlays, milled in-house — preserving as much natural tooth as possible.</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-12 col-md-4">
+            <a class="svc" href="#cosmetic-invisalign">
+              <div class="card svc">
+                <div class="card-body">
+                  <span class="material-symbols-outlined">star_shine</span>
+                  <h3 class="card-title">Cosmetic &amp; Clear Aligners</h3>
+                  <p class="card-text">Esthetic dentistry treated as an art — natural, beautiful, long-lasting results, planned digitally.</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-12 col-md-4">
+            <a class="svc" href="#sleep-apnea-tmj">
+              <div class="card svc">
+                <div class="card-body">
+                  <span class="material-symbols-outlined">hotel</span>
+                  <h3 class="card-title">Sleep Apnea &amp; TMJ</h3>
+                  <p class="card-text">Comfortable oral appliance therapy for snoring and obstructive sleep apnea, plus TMD evaluation and care.</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-12 col-md-4">
+            <a class="svc" href="#dental-hygiene">
+              <div class="card svc">
+                <div class="card-body">
+                  <span class="material-symbols-outlined">medical_mask</span>
+                  <h3 class="card-title">Dental Hygiene</h3>
+                  <p class="card-text">Far more than a cleaning — every hygiene visit is a comprehensive evaluation of your oral health.</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid ps-5 pt-5 pe-5" id="general-dentistry">
+        <div class="row" >
+          <div data-usal="fade split-item split-delay-50-linear" class="col-12 col-md-12 mb-4">
+            <span class="kicker mb-3">Services</span>
+            <h2 class="mb-3">General Dentistry</h2>
+            <h3 class="mb-2">What is great general dentistry?</h3>
+            <p class="mb-5">General dentistry is the foundation of our practice — disease prevention, health maintenance, and treatment of conditions of the mouth. But exceptional general dentistry goes beyond procedural skill: it means understanding how your oral health affects your overall wellness. Maintaining strong oral hygiene can even help diabetic patients manage blood sugar — the connection between mouth health and whole-body health is well documented, and we treat you with that connection in mind.</p>
+            <h3 class="mb-2">Why Dr. Kerr?</h3>
+            <p class="mb-2">Dr. Kerr brings over 30 years of clinical experience and thousands of hours of specialized training across all the disciplines of dentistry. He regularly reviews the current dental literature so your care reflects the best available evidence, and his broad training means fewer unnecessary referrals — whether you need a simple restoration or a comprehensive smile rehabilitation. He listens carefully, weighs treatment options thoughtfully, and never loses sight of the connection between your dental health and your overall health.</p>
+            <div class="card infocard mb-4" style="width: 100%;">
+              <div class="card-body">
+                <p class="card-text fst-italic">Making a great smile is a mix of art and science!</p>
+              </div>
+            </div>
+            <p class="backtop"><a href="#services">↑ All services</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid ps-5 pt-5 pe-5" id="implant-dentistry">
+        <div class="row" >
+          <div data-usal="fade split-item split-delay-50-linear" class="col-12 col-md-6 mb-4">
+            <span class="kicker mb-3">Services</span>
+            <h2 class="mb-3">Implant Dentistry</h2>
+            <h3 class="mb-2">Why implant dentistry?</h3>
+            <p class="mb-5">Implant dentistry is a wonderful option for people who are missing one, some, or all of their teeth. Implants look natural, restore your ability to chew, work with a range of budgets, and preserve the jawbone — which naturally resorbs over time after a tooth is lost.</p>
+            <h3 class="mb-2">Why we're your best option</h3>
+            <p class="mb-5">Dr. Kerr has practiced implant dentistry for over 30 years. We use the best technology possible, including a digital imaging system of your mouth — a 3D scan that lets us place your new tooth virtually before any surgery. Because Dr. Kerr is university-trained in both implant placement and crown-and-bridge restoration, your whole treatment happens in one practice. Often, we can place your new tooth right through the gum without pain, swelling, or sutures.</p>
+            <h3 class="mb-2">How we think about implants</h3>
+            <div class="card infocard mb-2" style="width: 100%;">
+              <div class="card-body">
+                <p class="card-text fst-italic">Rather than looking at an implant as an isolated procedure, I think of an implant as an addition to the ecosystem of your mouth.</p>
+              </div>
+            </div>
+            <p>We plan every case virtually before we begin, handle most cases in-house, and consult with specialists when complex bone reconstruction is needed.</p>
+            <p class="backtop"><a href="#services">↑ All services</a></p>
+          </div>
+          <div data-usal="fade split-item split-delay-50-linear" class="col-12 col-md-6 mb-4">
+            <div class="ratio ratio-16x9 mb-4">
+              <iframe loading="lazy" src="https://www.speareducation.com/patient-education/embed/id/502/dr/1849/key/7a3526c950a97a6e579759b46bebc83245f922042ffe12852ca9cfbc5e218703" title="Screw Retained Implant" allowfullscreen></iframe>
+            </div>
+            <div class="ratio ratio-16x9">
+              <iframe loading="lazy" src="https://www.speareducation.com/patient-education/embed/id/700/dr/1849/key/b4a10f701aca892329fe020210cd042d1b3f80ffcf3128299ac287618c367e2a" title="Caring for a Dental Implant" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid ps-5 pt-5 pe-5" id="restorative-dentistry">
+        <div class="row" >
+          <div data-usal="fade split-item split-delay-50-linear" class="col-12 col-md-6 mb-4">
+            <span class="kicker mb-3">Services</span>
+            <h2 class="mb-3">Restorative Dentistry — One-Visit CAD/CAM</h2>
+            <p>When a tooth has been damaged by decay or breakage, it needs to be filled or restored with a crown or onlay. Our goal is always to make your teeth as cosmetically beautiful and aesthetically natural as possible while preserving the maximum amount of your natural tooth structure.</p>
+            <p class="mb-5">We color-match materials carefully and keep an extensive range of shades on hand; for front teeth, layering techniques create realistic, undetectable results. Onlays — a conservative restoration offered by only about 12% of U.S. dentists — let us treat damage without removing healthy tooth the way a full crown can.</p>
+            <h3 class="mb-2">Why we do CAD/CAM dentistry</h3>
+            <p class="mb-5">We've offered CAD/CAM dentistry since 2002 — among the earliest adopters in Maine. A three-dimensional digital image of your tooth lets us sculpt the restoration in software and mill it on-site with precision CEREC equipment. Procedures that used to take six weeks and multiple visits are now completed in a single appointment, with restorations that fit comfortably and look natural.</p>
+            <p class="backtop"><a href="#services">↑ All services</a></p>
+          </div>
+          <div data-usal="fade split-item split-delay-50-linear" class="col-12 col-md-6 mb-4">
+            <div class="ratio ratio-16x9">
+              <iframe loading="lazy" src="https://www.speareducation.com/patient-education/embed/id/536/dr/1849/key/ad807024815c20958d34925eb165a17f3a7fd42085cc0b73454c474a42530001" title="Filling versus crown — CAD/CAM" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid ps-5 pt-5 pe-5" id="cosmetic-invisalign">
+        <div class="row" >
+          <div data-usal="fade split-item split-delay-50-linear" class="col-12 col-md-6 mb-4">
+            <span class="kicker mb-3">Services</span>
+            <h2 class="mb-3">Cosmetic Dentistry &amp; Clear Aligners</h2>
+            <h3 class="mb-2">We treat cosmetic dentistry like an art</h3>
+            <p>While many dentists treat cosmetic dentistry as a simple procedure, we view esthetic dentistry as an art. Whether you come to us for the smallest filling or to completely change your smile, we make sure our work looks natural and beautiful — results built to last.</p>
+            <p class="mb-5">We use a detailed set of tools to tailor treatment to you: custom crown staining with dyes, photographic analysis of how your teeth relate to your facial features, and a 3D imaging system that lets us plan and design your smile before any procedure begins.</p>
+          </div>
+          <div data-usal="fade split-item split-delay-50-linear" class="col-12 col-md-6 mb-4">
+            <h3>Clear Aligners</h3>
+            <p>A Clear Aligner is an excellent alternative to traditional metal braces. A series of clear, nearly invisible trays gradually moves your teeth into position — typically faster than conventional braces, and discreet enough that most people won't notice you're wearing them.</p>
+            <p class="backtop"><a href="#services">↑ All services</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid ps-5 pt-5 pe-5" id="sleep-apnea-tmj">
+        <div class="row" >
+          <div data-usal="fade split-item split-delay-50-linear" class="col-12 col-md-6 mb-4">
+            <span class="kicker mb-3">Services</span>
+            <h2 class="mb-3">Sleep Apnea &amp; TMJ</h2>
+            <h3 class="mb-2">Sleep apnea often goes undiagnosed</h3>
+            <p>Sleep apnea is an increasingly prevalent disease affecting an estimated 12–18 million adult Americans — and it often goes undiagnosed. It can't be detected in a routine office visit or by a blood test, and it doesn't affect only middle-aged or overweight adults; even children can have sleep apnea.</p>
+            <p class="mb-5">Common symptoms include waking unrefreshed, daytime sleepiness, memory problems, morning headaches, heartburn, nighttime urination, leg swelling, gasping for breath during sleep, night sweats, chest pain, snoring, and pauses in breathing observed by a bed partner.</p>
+            <h3 class="mb-2">So why is a dentist involved?</h3>
+            <p class="mb-5">Obstructive sleep apnea — the most common type — occurs when your muscles relax during sleep, allowing soft tissue to collapse and block the airway. (Central sleep apnea, where the brain fails to signal breathing, is treated differently.) Left untreated, obstructive sleep apnea raises the risk of high blood pressure, stroke, heart disease, diabetes, obesity, and depression. Treatment is typically CPAP or oral appliance therapy — and dentists trained in dental sleep medicine work hand-in-hand with sleep physicians on your care.</p>
+            <h3 class="mb-2">Oral appliance therapy</h3>
+            <p class="mb-5">An oral appliance is a custom-made device, similar to a sports guard, that holds your jaw in a position that keeps the airway open while you sleep. Patients like it because it's comfortable, easy to wear, quiet, portable, convenient for travel, and easy to clean. Treating snoring or sleep apnea with oral appliance therapy can help you feel like a new person.</p>
+            <h3 class="mb-2">TMD / TMJ</h3>
+            <p class="mb-5">We also evaluate and treat temporomandibular joint dysfunction (TMD), which sometimes goes hand-in-hand with sleep apnea. A comprehensive examination lets us build a treatment plan customized to your joint, your bite, and your symptoms.</p>
+            <p class="backtop"><a href="#services">↑ All services</a></p>
+          </div>
+          <div data-usal="fade split-item split-delay-50-linear" class="col-12 col-md-6 mb-4">
+            <div class="ratio ratio-16x9 mb-4">
+              <iframe loading="lazy" src="https://www.speareducation.com/patient-education/embed/id/571/dr/1849/key/e307f6b6ddfb759ee24bdbbe21212bc4081e93a14b469528c282159c57481e47" title="Sleep appliances and sleep apnea" allowfullscreen></iframe>
+            </div>
+            <div class="ratio ratio-16x9 mb-4">
+              <iframe loading="lazy" src="https://www.speareducation.com/patient-education/embed/id/591/dr/1849/key/04148b7cd038b3a27e65c65d9e072acc191ed0da43d1c330a3f33e21ba04a99e" title="Obstructive sleep apnea" allowfullscreen></iframe>
+            </div>
+            <div class="ratio ratio-16x9 mb-4">
+              <iframe loading="lazy" src="https://www.speareducation.com/patient-education/embed/id/591/dr/1849/key/04148b7cd038b3a27e65c65d9e072acc191ed0da43d1c330a3f33e21ba04a99e" title="Obstructive sleep apnea" allowfullscreen></iframe>
+            </div>
+            <div class="ratio ratio-16x9">
+              <iframe loading="lazy" src="https://www.speareducation.com/patient-education/embed/id/643/dr/1849/key/78299ae41fc6b5ec6ccf0ceabad1915576aac3c17aa61adf75c2c43c4f5c94d8" title="Temporomandibular joint disorder (TMD)" allowfullscreen></iframe>
+            </div>
+          </div>  
+        </div>
+      </div>
+      <div class="container-fluid ps-5 pt-5 pe-5" id="dental-hygiene">
+        <div class="row" >
+          <div data-usal="fade split-item split-delay-50-linear" class="col-12 col-md-6 mb-4">
+            <span class="kicker mb-3">Services</span>
+            <h2 class="mb-3">Dental Hygiene</h2>
+            <h3 class="mb-2">More than just a cleaning</h3>
+            <p class="mb-5">Everyone wants a great smile with clean white teeth and healthy gums — and your hygiene visit delivers that, with gentle hand removal of tartar, polishing to eliminate stains, and care that reduces gum inflammation. But every hygiene visit here is also a thorough check of your oral health, because your overall health affects your mouth and your mouth affects your overall health.</p>
+            <h3 class="mb-2">What do hygiene visits include?</h3>
+            <ul class="list mb-2">
+              <li>An oral cancer exam — including the surrounding skin of your face</li>
+              <li>A head and neck examination for swollen lymph nodes or thyroid concerns</li>
+              <li>Gum health monitoring, with measurements tracked over time</li>
+              <li>Assessment of the integrity of existing fillings</li>
+              <li>Checking for cracks, worn teeth, and signs of grinding</li>
+              <li>A look at your general health status, so we can optimize the quality of your care</li>
+            </ul>
+            <p class="mb-5">We spend real time with you — understanding your individual needs is part of the appointment, not an afterthought.</p>
+            <p class="backtop"><a href="#services">↑ All services</a></p>
+          </div>
+          <div data-usal="fade split-item split-delay-50-linear" class="col-12 col-md-6 mb-4">
+            <div class="ratio ratio-16x9 mb-4">
+              <iframe loading="lazy" src="https://www.speareducation.com/patient-education/embed/id/685/dr/1849/key/3b7403f4b8f466d5b17af136d2f6b6acf793cbab743de9fc3a65ce8a4b8dc7ca" title="Proper flossing technique" allowfullscreen></iframe>
+            </div>
+            <div class="ratio ratio-16x9">
+              <iframe loading="lazy" src="https://www.speareducation.com/patient-education/embed/id/687/dr/1849/key/fbacfe1f6e349992146323b774f2f3d3b97b52d35f864ed1ce5421241a7965e7" title="Proper toothbrushing technique" allowfullscreen></iframe>
+            </div>
+          </div>  
+        </div>
+      </div>
+      <div class="container-fluid ps-5 pt-5 pe-5" id="drkerr">
+        <div class="row" >
+          <div data-usal="fade split-item split-delay-50-linear" class="col-12 col-md-6 mb-4">
+            <span class="kicker mb-3">Your Dentist</span>
+            <h2 class="mb-3">David R. Kerr, DDS</h2>
+            <div class="card infocard mb-4" style="width: 100%;">
+              <img class="card-img-top" src="/assets/cropped-David.png" alt="Photo of Dr. David Kerr">
+              <div class="card-body">
+                <p class="card-text fst-italic">I like to get to know my patients' stories — who they are, where they are and where they've been, and what is important to them as individuals. Building relationships is one of the most rewarding aspects of providing treatment to my patients.</p>
+              </div>
+            </div>
+            <p>Dr. Kerr has practiced dentistry in the Portland area for over 30 years. He stays current with evidence-based research and innovations in the field, and uses computer data analytics in his own clinical research. In 2011, the Maine Access Coalition honored him with its <strong>Oral Health Hero Award</strong> for his research on emergency-room visits and dental pain. He serves as Treasurer of the Maine Dental Association.</p>
+            <p>Dr. Kerr moved to Maine in 1985. He is married to Dr. Carol Kerr; they have two adult sons, three labradoodles, and a shared love of the Maine outdoors.</p>
+          </div>
+          <div data-usal="fade split-item split-delay-50-linear" class="col-12 col-md-6 mb-4">
+            <h3>Education &amp; teaching</h3>
+              <ul class="creds">
+                <li>St. Lawrence University, 1974</li>
+                <li>University of the Pacific, San Francisco — DDS, 1978</li>
+                <li>General Practice Residency, Long Island Jewish Hillside Medical Center, NYC</li>
+                <li>MBA, The Wharton School — Decision Science &amp; Healthcare Policy</li>
+                <li>Associate professor, University of Pennsylvania School of Dental Medicine</li>
+                <li>Faculty, University of Connecticut School of Dental Medicine</li>
+                <li>Appointee, Forsyth Dental Institute, Boston</li>
+                <li>Lecturer, Harvard School of Dental Medicine</li>
+              </ul>
+          </div>
+        </div>
+      </div>
+      <div data-usal="fade split-item split-delay-50-linear" class="container-fluid ps-5 pt-5 pe-5" id="assoc">
+        <div class="row" >
+          <div class="col-12 col-md-12 mb-4 text-center">
+            <h2 class="mb-3">Professional Associations</h2>
+            <h3 class="mb-4">Dr. Kerr stays connected with doctors throughout the profession and the nation through these organizations and academies.</h3>
+            <ul data-usal="fade split-item split-delay-50-linear" class="nav nav-pills" style="justify-content: center">
+              <li class="nav-item">
+                <a class="nav-link active rounded-pill mb-2 me-2">American Academy of Implant Dentistry</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active rounded-pill mb-2 me-2">American Academy of Dental Sleep Medicine</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active rounded-pill mb-2 me-2">American Academy for Oral Systemic Health</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active rounded-pill mb-2 me-2">Academy of General Dentistry</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active rounded-pill mb-2 me-2">Maine Dental Association — Treasurer</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active rounded-pill mb-2 me-2">Spear Education Faculty Club</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid ps-5 pt-5 pe-5" id="new-patients">
+        <div class="row" >
+          <div data-usal="fade split-item split-delay-50-linear" class="col-12 col-md-6 mb-4">
+            <span class="kicker mb-3">New Patients</span>
+            <h2 class="mb-3">Your first visit</h2>
+            <h3 class="mb-2">The first thing we do is get to know you</h3>
+            <p class="mb-5">From the moment you first call us, we will be your partner for your oral health. We listen to what you need, and we build a relationship — starting in a waiting area that overlooks the Fore River Sanctuary. Dr. Kerr begins your appointment by getting to know you and understanding your goals for your oral health. Many first visits include a comprehensive exam and cleaning, and we have educational materials to walk you through exactly what that involves.</p>
+            <h3 class="mb-2">We make sure you understand your options</h3>
+            <p class="mb-5">After gathering your health information, Dr. Kerr will give you his recommendations. For complex cases, we prepare a detailed treatment plan — often with multiple options — and present it at a follow-up visit. We focus on your long-term oral health and work with you to develop a financially feasible plan, in phases when that helps.</p>
+            <h3 class="mb-2">We make sure you understand your options</h3>
+            <p class="mb-5">Questions are welcome — during your visit and after it. You can always reach us at <a href="tel:2077750001">(207) 775-0001</a> or <a href="mailto:patientcare@drkerr.com">patientcare@drkerr.com</a>. A comfortable relationship with your dentist is part of what keeps your oral health on track.</p>
+            <div class="card anxietycard mb-4" style="width: 100%;">
+              <div class="card-body">
+                <h3 class="card-title">Anxious about the dentist? We understand.</h3>
+                <p class="card-text">Dental anxiety is a reality for many people, and we take it seriously. We explain treatment as many times as you need, and we treat you as a partner in your own care. Rather than relying only on anti-anxiety medication, we use systematic desensitization — small steps toward overcoming your fears, at your own pace. For some patients that means starting with a visit to the parking lot, then the lobby, the waiting room, and eventually the dental chair — an approach that can eliminate the need for any supplemental anti-anxiety medication.</p>
+              </div>
+            </div>
+          </div>
+          <div data-usal="fade split-item split-delay-50-linear" class="col-12 col-md-6 mb-4">
+            <div class="ratio ratio-16x9">
+              <iframe loading="lazy" src="https://www.speareducation.com/patient-education/embed/id/705/dr/1849/key/bd614421487333637af72290ea7820a8aa7992812c353a8a8bc10e2f61fbea08" title="What a comprehensive exam and cleaning involves" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid ps-5 pt-5 pe-5" id="contact">
+        <div class="row" >
+          <div data-usal="fade split-item split-delay-50-linear" class="col-12 col-md-6 mb-4">
+            <span class="kicker mb-3">Contact Us</span>
+            <h2 class="mb-3">We'd love to hear from you</h2>
+            <p class="mb-4">Get in touch to schedule a consultation or request more information on how Dr. Kerr and Maine Integrative Dentistry can help you.</p>
+            <a id="heroContactButton" class="heroButton me-2 btn btn-primary btn-lg rounded-3" href="mailto:patientcare@drkerr.com" role="button">Request an Appointment</a>
+            <!-- TODO(hours): add office hours here once confirmed. -->
+          </div>
+          <div data-usal="fade split-item split-delay-50-linear" class="col-12 col-md-6 mb-4">
+            <ul class="info">
+              <li>
+                <i class="bi bi-telephone"></i>
+                <a class="link-light" href="tel:2077750001">(207) 775-0001</a>
+              </li>
+              <li>
+                <i class="bi bi-envelope"></i>
+                <a class="link-light" href="mailto:patientcare@drkerr.com">patientcare@drkerr.com</a>
+              </li>
+            </ul>
+            <div class="ratio ratio-16x9">
+              <iframe loading="lazy" referrerpolicy="strict-origin-when-cross-origin" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBj66721_sr2suCGA9CYv_OY0usAu8Nxbc&q=David+R.+Kerr,+D.D.S.+Maine+Integrative+Dentistry" title="Office location map" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer id="footer" class="py-4 mt-auto">
+        <div class="container-fluid d-flex flex-wrap justify-content-between align-items-center py-2">
+          <div class="d-flex">
+            <span class="footer-text ps-5">&copy; 2026 David R. Kerr, DDS, LLC PA · Maine Integrative Dentistry · Portland, Maine</span>
+          </div>
+          <div class="d-flex">
+            <span class="footer-text pe-5"><a style="color:#8fa9c0;" href="NOTICE.md">Open-Source Licenses</a></span>
+          </div>
+        </div>
+      </footer>
+    
   </body>
 </html>
